@@ -569,5 +569,24 @@
       src="slide_javascript/slideJS.js?831ce57f410466b93779ee06613e796a"
       type="text/javascript"
     ></script>
+    <script type="text/javascript">
+      function setSong(source, number) {
+        const src = `files/songs/0${number}.wav`
+        if (source && source.attr('src') !== src) {
+          source.attr('src', src)
+          const audio = $('audio').get(0)
+          audio.pause()
+          audio.load()
+          audio.oncanplaythrough = audio.play()
+        }
+      }
+      $(document).ready(function() {
+        const source = $("#audioSource").get(0);
+        setSong(source, 1)
+      });
+    </script>
+    <audio controls loop>
+      <source id="audioSource" type="audio/wav">
+    </audio>
   </body>
 </html>
