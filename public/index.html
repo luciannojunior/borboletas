@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
 
     <style>
-      span {
-        transform: rotate(20deg);
-        font-size: 1.6vw;
-        font-weight: bold;
-        font-family: Arial;
-        font-family: "Unlock", cursive;
-        color: transparent;
-      }
+span {
+  transform: rotate(20deg);
+  font-size: 1.6vw;
+  font-weight: bold;
+  font-family: Arial;
+  font-family: "Unlock", cursive;
+  color: transparent;
+}
       #book:hover,
       #envelope:hover,
       #quadrinho:hover,
@@ -64,9 +64,9 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link
-      href="https://fonts.googleapis.com/css?family=Unlock"
-      rel="stylesheet"
-    />
+                             href="https://fonts.googleapis.com/css?family=Unlock"
+                             rel="stylesheet"
+                             />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
@@ -93,36 +93,36 @@
         <img src="30.png" alt="" style="width: 100%" />
         <div>
           <span style="font-size: 1.7vw; margin-top: 15px"
-            >História em Quadrinhos</span
-          >
+                >História em Quadrinhos</span
+              >
         </div>
       </div>
       <div
-        id="dois"
-        style="display:flex; flex-direction: column; width:15%; justify-content: space-around; margin-right: 30px"
-      >
-        <div id="envelope">
-          <img
-            src="Envelope.png"
-            alt=""
-            style="width: 100%; transform: rotate(-10deg);"
-          />
-          <div style="transform: rotate(-9deg);">
-            <span style="font-size: 2.4vw; margin: 0 0 0 30px;">Equipe</span>
-          </div>
-        </div>
-        <div id="fita" style="margin-left -150px">
-          <img
-            src="Fita.png"
-            alt=""
-            style="width: 100%; transform: rotate(-10deg);"
-          />
-          <div style="transform: rotate(-9deg);">
-            <span style="font-size: 1.5vw; margin: 15px 0 0 30px;"
-              >Trilha Sonora</span
-            >
-          </div>
-        </div>
+                id="dois"
+                style="display:flex; flex-direction: column; width:15%; justify-content: space-around; margin-right: 30px"
+                >
+                <div id="envelope">
+                  <img
+                     src="Envelope.png"
+                     alt=""
+                     style="width: 100%; transform: rotate(-10deg);"
+                     />
+                  <div style="transform: rotate(-9deg);">
+                    <span style="font-size: 2.4vw; margin: 0 0 0 30px;">Equipe</span>
+                  </div>
+                </div>
+                <div id="fita" style="margin-left -150px">
+                  <img
+                               src="Fita.png"
+                               alt=""
+                               style="width: 100%; transform: rotate(-10deg);"
+                               />
+                  <div style="transform: rotate(-9deg);">
+                    <span style="font-size: 1.5vw; margin: 15px 0 0 30px;"
+                          >Trilha Sonora</span
+                        >
+                  </div>
+                </div>
       </div>
     </div>
 
@@ -144,27 +144,35 @@
 
       // Get the button that opens the modal
       var btn = document.getElementById("myBtn");
+      var envelope = document.getElementById("envelope");
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks the button, open the modal
-      btn.onclick = function() {
+      envelope.onclick = function(e) {
         console.log('Modal will be opened. I hope')
         modalEquipe.style.display = "block";
+        e.stopPropagation()
       };
 
       // When the user clicks on <span> (x), close the modal
       //span.onclick = function() {
-       // modalEquipe.style.display = "none";
+      // modalEquipe.style.display = "none";
       //};
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
-        if (event.target != btn) {
-          modalEquipe.style.display = "none";
-        }
+        console.log('click')
+        modalEquipe.style.display = "none";
       };
+    </script><script type="text/javascript">
+      (function () {
+        document.querySelector('#book').onclick = () => location.href = "livro.html"
+        document.querySelector('#quadrinho').onclick = () => location.href = "livro.html"
+        document.querySelector('#envelope').onclick = () => location.href = "livro.html"
+        document.querySelector('#fita').onclick = () => location.href = "livro.html"
+      })()
     </script>
   </body>
 </html>
