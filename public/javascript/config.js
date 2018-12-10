@@ -82,7 +82,7 @@ var bookConfig = {
   AboutWebsite: "http://fliphtml5.com",
   AboutDescription:
     "FLIP HTML5 is a Interactive html5 digital publishing platform that makes it easy to create interactive digital publications, including magazines, catalogs, newspapers, books, and more online. Create HTML5 flipbook from PDF to view on iPhone, iPad and Android devices.",
-  totalPageCount: 34,
+  totalPageCount: 36,
   largePageWidth: 836,
   largePageHeight: 1280,
   VideoButtonVisible: "Hide",
