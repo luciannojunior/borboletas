@@ -583,7 +583,7 @@
     ></script>
     <script type="text/javascript">
       function setSong(source, number) {
-        const src = `files/songs/0${number}.wav`;
+        const src = `files/songs/0${number}.mp3`;
         if (source && source.attr && source.attr("src") !== src) {
           source.attr("src", src);
           const audio = $("audio").get(0);
@@ -598,7 +598,7 @@
       });
     </script>
     <audio style="display: none" controls loop>
-      <source id="audioSource" type="audio/wav" />
+      <source id="audioSource" type="audio/mp3" />
     </audio>
   </body>
 </html>
