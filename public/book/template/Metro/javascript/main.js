@@ -9753,7 +9753,9 @@ var form_icons = {
 };
 var setCurrentIndexTextField = function(b) {
     audio = b / 7 + 1;
-    setSong($("#audioSource"), Math.floor(audio));
+    try {
+      setSong($("#audioSource"), Math.floor(audio));
+    } catch (err) {}
     b = getShownPageNumberInfo(b);
     $("#guidPageIndex").html("<b>" + b + "</b>");
     $("#currentPageIndexTextField") &&
@@ -71917,8 +71919,6 @@ Class("PCToolbar", {
     this.edtPageNumber = $(
       "<div class='pageNumber' id='tfPageIndex'><input type='text' id='currentPageIndexTextField' size='15' /></div>"
     );
-    this.parent.append(this.topBar);
-    this.parent.append(this.bottomBar);
     this.topBar.append(this.logoBar);
     this.topBar.append(this.searchBar);
     this.bottomBar.append(this.leftButtonBar);

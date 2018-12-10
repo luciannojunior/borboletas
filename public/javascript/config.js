@@ -124,42 +124,6 @@ var bookConfig = {
   searchTextJS: "files/search/book_config.js",
   searchPositionJS: "files/search/text_position[%d].js"
 };
-var fliphtml5_pages = [
-  { l: "files/large/1.jpg", t: "files/thumb/1.jpg" },
-  { l: "files/large/2.jpg", t: "files/thumb/2.jpg" },
-  { l: "files/large/3.jpg", t: "files/thumb/3.jpg" },
-  { l: "files/large/4.jpg", t: "files/thumb/4.jpg" },
-  { l: "files/large/5.jpg", t: "files/thumb/5.jpg" },
-  { l: "files/large/6.jpg", t: "files/thumb/6.jpg" },
-  { l: "files/large/7.jpg", t: "files/thumb/7.jpg" },
-  { l: "files/large/8.jpg", t: "files/thumb/8.jpg" },
-  { l: "files/large/9.jpg", t: "files/thumb/9.jpg" },
-  { l: "files/large/10.jpg", t: "files/thumb/10.jpg" },
-  { l: "files/large/11.jpg", t: "files/thumb/11.jpg" },
-  { l: "files/large/12.jpg", t: "files/thumb/12.jpg" },
-  { l: "files/large/13.jpg", t: "files/thumb/13.jpg" },
-  { l: "files/large/14.jpg", t: "files/thumb/14.jpg" },
-  { l: "files/large/15.jpg", t: "files/thumb/15.jpg" },
-  { l: "files/large/16.jpg", t: "files/thumb/16.jpg" },
-  { l: "files/large/17.jpg", t: "files/thumb/17.jpg" },
-  { l: "files/large/18.jpg", t: "files/thumb/18.jpg" },
-  { l: "files/large/19.jpg", t: "files/thumb/19.jpg" },
-  { l: "files/large/20.jpg", t: "files/thumb/20.jpg" },
-  { l: "files/large/21.jpg", t: "files/thumb/21.jpg" },
-  { l: "files/large/22.jpg", t: "files/thumb/22.jpg" },
-  { l: "files/large/23.jpg", t: "files/thumb/23.jpg" },
-  { l: "files/large/24.jpg", t: "files/thumb/24.jpg" },
-  { l: "files/large/25.jpg", t: "files/thumb/25.jpg" },
-  { l: "files/large/26.jpg", t: "files/thumb/26.jpg" },
-  { l: "files/large/27.jpg", t: "files/thumb/27.jpg" },
-  { l: "files/large/28.jpg", t: "files/thumb/28.jpg" },
-  { l: "files/large/29.jpg", t: "files/thumb/29.jpg" },
-  { l: "files/large/30.jpg", t: "files/thumb/30.jpg" },
-  { l: "files/large/31.jpg", t: "files/thumb/31.jpg" },
-  { l: "files/large/32.jpg", t: "files/thumb/32.jpg" },
-  { l: "files/large/33.jpg", t: "files/thumb/33.jpg" },
-  { l: "files/large/34.jpg", t: "files/thumb/34.jpg" }
-];
 var language = [
   {
     language: "English",
